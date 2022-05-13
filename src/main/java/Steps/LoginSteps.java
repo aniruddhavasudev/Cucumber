@@ -62,7 +62,6 @@ public class LoginSteps {
 			WebElement we = driver.findElement(By.xpath("//*[@id='main-nav']/div[3]"));
 			action.moveToElement(we).build().perform();
 			action.pause(5000);
-			System.out.println("*******************");
 			driver.findElement(By.xpath("//*[contains(@id,'main-nav')]/child::div[3]/child::button")).click();
 			driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 			driver.navigate().refresh();

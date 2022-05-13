@@ -6,6 +6,9 @@ Scenario: Login to CRM application
 	Then User enters Username  
 	And User enters password
 	And User clicks on login button
-	And User is on home page 
+	And User adds the following contacts
+	|firstname | mail id       | lastname |
+	| Ani      | ani@gmail.com | Vasudev  |
+	| Megh     | megh@gmail.com| Rao      |
 	
 	
